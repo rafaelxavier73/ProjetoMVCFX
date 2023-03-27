@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvcfx.controller.MainController">
+   <children>
+      <MenuBar fx:id="jMenuBarPrincipal">
+        <menus>
+          <Menu fx:id="jMenuCadastros" mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem fx:id="jMenuItemPessoa" mnemonicParsing="false" onAction="#handleMenuItemPessoa" text="Pessoas" />
+                  <MenuItem fx:id="jMenuItemProduto" mnemonicParsing="false" onAction="#handleMenuItemProduto" text="Produtos" />
+            </items>
+          </Menu>
+          <Menu fx:id="jMenuProcessos" mnemonicParsing="false" text="Processos">
+            <items>
+              <MenuItem fx:id="jMenuItemVenda" mnemonicParsing="false" onAction="#handleMenuItemVenda" text="Vendas" />
+            </items>
+          </Menu>
+          <Menu fx:id="jMenuRelatorios" mnemonicParsing="false" text="Relatórios">
+            <items>
+              <MenuItem fx:id="jMenuItemRelPessoas" mnemonicParsing="false" onAction="#handleMenuItemRelPessoas" text="Lista de Pessoas" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="jPanelPrincipal" />
+      <ImageView fx:id="imageViewLogoPrincipal" fitHeight="425.0" fitWidth="600.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo_principal.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>

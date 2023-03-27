@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvcfx.controller.PersonController">
+   <children>
+      <Label layoutX="25.0" layoutY="75.0" prefHeight="25.0" prefWidth="100.0" text="Nome:" />
+      <TextField fx:id="jTextFieldNome" layoutX="125.0" layoutY="75.0" prefHeight="25.0" prefWidth="300.0" promptText="Nome completo" />
+      <Label layoutX="25.0" layoutY="125.0" prefHeight="25.0" prefWidth="100.0" text="Endereço:" />
+      <Label layoutX="25.0" layoutY="175.0" prefHeight="25.0" prefWidth="100.0" text="Sexo:" />
+      <Label layoutX="25.0" layoutY="225.0" prefHeight="25.0" prefWidth="100.0" text="CPF:" />
+      <Label layoutX="25.0" layoutY="275.0" prefHeight="25.0" prefWidth="100.0" text="RG:" />
+      <TextField fx:id="jTextFieldEndereco" layoutX="125.0" layoutY="125.0" prefHeight="25.0" prefWidth="300.0" promptText="Endereço completo" />
+      <ComboBox fx:id="jComboBoxSexo" layoutX="125.0" layoutY="175.0" prefHeight="25.0" prefWidth="150.0" promptText="Selecione..." visibleRowCount="3" />
+      <TextField fx:id="jTextFieldCpf" layoutX="125.0" layoutY="225.0" prefHeight="25.0" prefWidth="150.0" promptText="CPF (somente números)" />
+      <TextField fx:id="jTextFieldRg" layoutX="125.0" layoutY="275.0" prefHeight="25.0" prefWidth="150.0" promptText="RG (somente números)" />
+      <Button fx:id="jButtonSalvar" layoutX="25.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonSalvar" prefHeight="25.0" prefWidth="100.0" text="Salvar" />
+      <Button fx:id="jButtonLimpar" layoutX="175.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonLimpar" prefHeight="25.0" prefWidth="100.0" text="Limpar" />
+      <Button fx:id="jButtonFechar" layoutX="325.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonFechar" prefHeight="25.0" prefWidth="100.0" text="Fechar" />
+      <Label layoutX="25.0" layoutY="25.0" text="Cadastro de Pessoa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
